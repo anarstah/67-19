@@ -5,6 +5,43 @@
     <title>forms</title>
 </head>
 <body>
+    <table width="700px" align="center">
+        <tr>
+            <td>
+                <p><b>Простая форма поиска с вариантами:</b></p><br>
+                <form method="get" action="http://fe.it-academy.by/TestForm.php" name="1">
+                    <legend>Строка поиска</legend>
+                    <label>
+                        <input type="text" name="search" maxlength="10">
+                        <input type="submit" value="Искать">
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="radio" value="here">на сайте
+                        <input type="radio" name="radio" value="google">google
+                    </label>
+                </form>
+            </td>
+
+
+            <td>
+                <p><b>Простая форма поиска с вариантами:</b></p><br>
+                <form method="get" action="http://fe.it-academy.by/TestForm.php">
+                    <legend>Строка поиска</legend>
+                    <label>
+                        <input type="text" name="search" maxlength="10" autofocus>
+                        <input type="submit" value="Искать">
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="radio" value="here">на сайте
+                        <input type="radio" name="radio" value="google">google
+                        <!--обязательное поле-->
+                    </label>
+                </form>
+            </td>
+        </tr>
+    </table>
 
 </body>
 </html>
