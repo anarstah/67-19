@@ -64,7 +64,119 @@
                         </label>
                     </fieldset>
                 </form>
+            </td>
 
+
+            <td>
+            <p><b>Опрос (голосование):</b></p>
+            <form method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Как вам?</legend>
+                    <label>
+                        <input type="radio" name="opinion" value="4">ничего<br>
+                        <input type="radio" name="opinion" value="3">неплохо<br>
+                        <input type="radio" name="opinion" value="2">хорошо<br>
+                        <input type="radio" name="opinion" value="1">супер<br>
+                    </label>
+                    <br>
+                    <label>
+                        <input type="submit" value="Отправить">
+                    </label>
+                    <label>
+                        <input type="text" value="2013.12.31" hidden>
+                    </label>
+                </fieldset>
+            </form>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <p><b>Отзыв:</b></p><br>
+                <form method="post" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset>
+                        <legend>Оставтье Ваш отзыв</legend>
+                        <label>
+                            <input type="text" name="name" required> Имя<br>
+                            <input type="email" name="email" required> Email<br>
+                            <textarea lang="ru" placeholder="Форма отправки"></textarea>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="submit" value="Отправить">
+                        </label>
+                    </fieldset>
+                </form>
+            </td>
+
+            <td>
+                <p><b>Выпадающий и мульти списки:</b></p><br>
+                <form method="post" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset>
+                        <legend>Города РБ</legend>
+                        <label>
+                            <select name="city">
+                                <optgroup label="Города РБ">
+                                    <option value="1">Минск</option>
+                                    <option value="2">Брест</option>
+                                    <option value="3">Витебск</option>
+                                </optgroup>
+                                <optgroup label="Города РФ">
+                                    <option value="1">Москва</option>
+                                    <option value="2">Питер</option>
+                                    <option value="3">Новгород</option>
+                                </optgroup>
+                            </select>
+                        </label>
+
+                        <label>
+                            <input type="submit" value="OK">
+                            <!-- Как сделать, что бы список открывался вверх?-->
+                        </label>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p><b>Загрузка файла на сервер</b></p><br>
+                <form method="post" action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Upload</legend>
+                        <p>Файл:</p>
+                        <label>
+                            <input type="file" name="file_name" required>
+                        </label>
+                        <p>Срок хранения (года):</p>
+                        <label>
+                            <input type="text" pattern="[0-9]{1,2}" name="years" required>
+                        </label>
+                        <label>
+                            <input type="submit" value="Загрузить">
+                            <!-- как изменить размер окна ввода-->
+                        </label>
+                    </fieldset>
+                </form>
+            </td>
+
+            <td>
+                <p><b>Валидация данных HTML5:</b></p><br>
+                <form method="post" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <label>
+                            <input type="text" name="text" placeholder="Только русские буквы" pattern="[А-Яа-я]+" required><br>
+                            <input type="text" name="phone" placeholder="телефон" pattern="^\+375 \((17|29|33|44|25 )\) [0-9]{3}-[0-9]{2}-[0-9]{2}$" required><br>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="submit" value="Проверить">
+                        </label>
+                    </fieldset>
+                </form>
+            </td>
         </tr>
     </table>
 
