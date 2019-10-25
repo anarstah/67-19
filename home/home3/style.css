@@ -1,0 +1,16 @@
+main {
+    font-family: 'Bad Script', cursive;
+    text-indent: 30px;
+}
+h1 {
+    text-align: right;
+    font-size: 17px;
+}
+
+div {
+    text-align: right;
+    font-size: 15px;
+}
+.p {
+    font-size: 15px;
+}
